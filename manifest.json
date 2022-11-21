@@ -1,0 +1,33 @@
+{
+    "name": "AB Clean Feed",
+    "description": "Remove the local ads from the top-known Nepali online news portal - AB Clean Feed (open-source)",
+    "version": "1.0",
+    "permissions": [
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.setopati.com/*"
+            ],
+            "js": [
+                "myScript.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "icons/ABCleanFeedLogo.png",
+        "48": "icons/ABCleanFeedLogo.png",
+        "128": "icons/ABCleanFeedLogo.png",
+        "256": "icons/ABCleanFeedLogo.png",
+        "512": "icons/ABCleanFeedLogo.png"
+    },
+    "host_permissions": [
+        "*://*.setopati.com/*"
+    ],
+    "manifest_version": 3
+}
