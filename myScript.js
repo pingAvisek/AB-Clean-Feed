@@ -1,4 +1,4 @@
-alert("Hiiiii");
+// alert("Hiiiii");
 console.log("Hiiiii");
 let blockads = [
   ".sticky-footer-bigyaapan",
