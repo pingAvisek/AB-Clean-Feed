@@ -1,5 +1,3 @@
-// alert("Hiiiii");
-console.log("Hiiiii");
 let blockads = [
   ".sticky-footer-bigyaapan",
   ".mobile-fixed-ad",
