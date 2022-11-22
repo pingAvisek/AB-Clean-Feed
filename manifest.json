@@ -11,7 +11,8 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.setopati.com/*"
+                "*://*.setopati.com/*",
+                "*://*.onlinekhabar.com/*"
             ],
             "js": [
                 "myScript.js"
@@ -27,7 +28,8 @@
         "512": "icons/ABCleanFeedLogo.png"
     },
     "host_permissions": [
-        "*://*.setopati.com/*"
+        "*://*.setopati.com/*",
+        "*://*.onlinekhabar.com/*"
     ],
     "manifest_version": 3
 }
