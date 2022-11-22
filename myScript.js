@@ -46,8 +46,12 @@ for (const i of onlineKhabarAdDiv) {
   });
 }
 
-let headerAd = document
-  .querySelector("section") // done this as I can't find any class or id for this
-  .setAttribute("style", "display: none !important");
-
+function remBanner() {
+  let headerAd = document.querySelector("section");
+  // done this as I can't find any class or id for this
+  headerAd.setAttribute("style", "display: none !important"); // still there are some ads
+  // console.log("Success");
+}
 // Still needs to work on this (connect IPS logo)
+
+remBanner();
