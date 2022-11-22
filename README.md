@@ -27,6 +27,7 @@ Install this Extension on any Chromium based browser
 
 - Removes all the local advertisements from the Nepali News Portal Sites
 
-## Site(s) that extension work(s) on
+## Websites where this extension is functional
 
 - www.setopati.com
+- www.onlinekhabar.com
