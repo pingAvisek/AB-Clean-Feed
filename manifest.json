@@ -1,7 +1,7 @@
 {
     "name": "AB Clean Feed",
     "description": "Remove the local ads from the top-known Nepali online news portal - AB Clean Feed (open-source)",
-    "version": "1.0",
+    "version": "2.0",
     "permissions": [
         "activeTab"
     ],
