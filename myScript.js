@@ -55,3 +55,44 @@ function remBanner() {
 // Still needs to work on this (connect IPS logo)
 
 remBanner();
+
+// For ekantipur;
+
+let ekantipurAdDiv = ["static-sponsor", "notification-count"];
+
+for (const i of ekantipurAdDiv) {
+  let block = document.querySelectorAll(`.${i}`);
+  block.forEach((e) => {
+    e.setAttribute("style", "display: none !important");
+  });
+}
+
+function toggleOpedSection() {
+  if (
+    document.getElementById("blockLayout").classList.contains("oped-toggle")
+  ) {
+    document.getElementById("blockLayout").classList.remove("oped-toggle");
+    document.getElementById("header").classList.remove("oped-toggle");
+    document.getElementById("wrapper").classList.remove("oped-toggle");
+  } else {
+    document.getElementById("blockLayout").classList.add("oped-toggle");
+    document.getElementById("header").classList.add("oped-toggle");
+    document.getElementById("wrapper").classList.add("oped-toggle");
+  }
+}
+
+function redDot() {
+  let a = document.querySelector(
+    "#header > div.setting.col-xs-1.col-sm-1.col-md-1 > label > span"
+  );
+  let b = document.querySelector("#wrapper > footer > div > div:nth-child(3)");
+  a.setAttribute("style", "display: none !important");
+  b.setAttribute("style", "display: none !important");
+}
+
+toggleOpedSection();
+
+setTimeout(() => {
+  redDot();
+  console.log("Success");
+}, 1000);

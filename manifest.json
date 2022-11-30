@@ -1,7 +1,7 @@
 {
     "name": "AB Clean Feed",
     "description": "Remove the local ads from the top-known Nepali online news portal - AB Clean Feed (open-source)",
-    "version": "2.0",
+    "version": "3.0",
     "permissions": [
         "activeTab"
     ],
@@ -12,6 +12,7 @@
         {
             "matches": [
                 "*://*.setopati.com/*",
+                "*://*.ekantipur.com/*",
                 "*://*.onlinekhabar.com/*"
             ],
             "js": [
@@ -32,6 +33,7 @@
     },
     "host_permissions": [
         "*://*.setopati.com/*",
+        "*://*.ekantipur.com/*",
         "*://*.onlinekhabar.com/*"
     ],
     "manifest_version": 3

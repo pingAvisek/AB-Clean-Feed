@@ -31,3 +31,4 @@ Install this Extension on any Chromium based browser
 
 - www.setopati.com
 - www.onlinekhabar.com
+- www.ekantipur.com
