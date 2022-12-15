@@ -58,10 +58,17 @@ remBanner();
 
 // For ekantipur;
 
-let ekantipurAdDiv = ["static-sponsor", "notification-count"];
+let ekantipurAdDiv = [
+  "static-sponsor",
+  "notification-count",
+  "layout_sponser_content",
+  "app-links",
+  "icons",
+];
 
 for (const i of ekantipurAdDiv) {
-  let block = document.querySelectorAll(`.${i}`);
+  let block = document.querySelectorAll(`.${i}, #${i}`);
+  console.log(block);
   block.forEach((e) => {
     e.setAttribute("style", "display: none !important");
   });
@@ -90,9 +97,15 @@ function redDot() {
   b.setAttribute("style", "display: none !important");
 }
 
+function boxSponsored() {
+  let boxSponsored = document.querySelector(".box-sponsored");
+  boxSponsored.setAttribute("style", "display: none !important");
+}
+
 toggleOpedSection();
 
 setTimeout(() => {
   redDot();
-  console.log("Success");
-}, 1000);
+  boxSponsored();
+  // console.log("Success");
+}, 3000);
